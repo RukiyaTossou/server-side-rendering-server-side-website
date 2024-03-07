@@ -1,0 +1,45 @@
+<%- include('partials/head') %>
+<body>
+<article class="container">
+<section>
+    <h1>Lessons</h1>
+    <h2 class="headers-h2">Own playlist</h2>
+    <section class="playlists">
+
+    </section>
+</section>
+<section>
+    <h2 class="headers-h2">All stories</h2>
+    <button class="first-language"></button>
+    <button class="second-language"></button>
+    <a class="headers-h2" href="/lessons/allStories"> Show All</a>
+    <ul class="ul-lessons-stories">
+        <% stories.forEach(story => {%>
+            <li class="li-story">
+                <img src="#" alt="#">
+               <h2> <%= story.title %> </h2> 
+               <p> <%= story.summary %></p>
+            </li>
+       <% });  %>
+    </ul>
+</section>
+<section></section>
+
+
+
+</article>
+
+
+<section>
+   
+</section>
+<section>
+   
+ 
+    
+    <article>
+       
+
+    </article>
+</section>
+<%- include('partials/foot') %>

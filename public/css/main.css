@@ -1,0 +1,49 @@
+:root {
+    /* background */
+    --lessons-backgroundcolor-body:#3A1A69;
+    --lessons-backgroundcolor-addPlaylist:#494375;
+     /* color */
+    --lessons-h1-color: #FFFFFF;
+    --lessons-listening-box-color:#139943;
+    --lessons-story-box:#FFFFFF;
+
+    /*  */
+
+    /* font */
+    --lessons-h1-font:"Poppins", sans-serif;
+    --lessons-h1-fontSize: 28px;
+    --lessons-h2-fontSize: 20px;
+    --lessons-h1-font-weight: 600;
+
+}
+.lessons-h1 {
+    font-family: var(--lessons-h1-font);
+    font-size: var(--lessons-h1-fontSize);
+    font-weight: var(--lessons-h1-font-weight);
+    color: var(--lessons-h1-color);
+}
+
+.headers-h2 {
+    font-family: var(--lessons-h1-font);
+    font-weight: var(--lessons-h1-font-weight);
+    font-size: var(--lessons-h2-fontSize);
+    color: var(--lessons-h1-color);
+}
+
+body {
+    font-family: var(--lessons-h1-font);
+    background-color: var(--lessons-backgroundcolor-body);
+}
+
+.contianer {
+    display: grid;
+}
+
+.ul-lessons-stories {
+   
+}
+
+.li-story {
+    background-color: var(--lessons-story-box);
+    list-style: none;
+}
