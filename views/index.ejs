@@ -2,24 +2,43 @@
 <body>
 <article class="container">
 <section>
-    <h1>Lessons</h1>
+    <h1 class="lessons-h1">Lessons</h1>
     <h2 class="headers-h2">Own playlist</h2>
-    <section class="playlists">
-
-    </section>
+    <ul class="playlists">
+        <li><div class="playlist-item"></div></li>
+        <li>
+            <div class="more-items">
+                <img class="more-items-white-plus" src="/image/icons/white-plus.svg" alt="plus">
+                <h3>Make a playlist!</h3>
+                <p>Add your favorite stories in one playlist</p>
+            </div> 
+        </li>
+    <ul>
 </section>
+
 <section>
-    <h2 class="headers-h2">All stories</h2>
-    <button class="first-language"></button>
-    <button class="second-language"></button>
-    <a class="headers-h2" href="/lessons/allStories"> Show All</a>
-    <ul class="ul-lessons-stories">
+    
+    <section>
+        <h2 class="headers-h2">All stories</h2>
+        <div class="box-language">
+            <button class="first-language"> <img src="/image/icons/nederlandse-flag.png" alt="nederlandse flag"> Dutch</button>
+            <button class="second-language"><img src="/image/icons/engelse-flas.svg" alt="engelse flag"> English</button>
+            <a class="headers-h2 a-showAll" href="/lessons/allStories"> Show All</a>
+        </div>
+        
+    </section>
+   
+    <section class="ul-lessons-stories">
         <% stories.forEach(story => {%>
-            <li class="li-story">
-                <img src="#" alt="#">
-               <h2> <%= story.title %> </h2> 
-               <p> <%= story.summary %></p>
-            </li>
+            <article class="li-story">
+                    <img class="img-story" src="https://fdnd-agency.directus.app/items/tm_story/<%= stories.image %>" alt="#">
+                    <h2 class="story-title">
+                         <%= story.title %> 
+                        </h2> 
+                    <p class="story-summary"> 
+                        <%= story.summary %>
+                    </p>
+            </article>
        <% });  %>
     </ul>
 </section>
@@ -29,17 +48,4 @@
 
 </article>
 
-
-<section>
-   
-</section>
-<section>
-   
- 
-    
-    <article>
-       
-
-    </article>
-</section>
 <%- include('partials/foot') %>

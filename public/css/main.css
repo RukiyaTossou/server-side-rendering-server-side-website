@@ -11,16 +11,20 @@
 
     /* font */
     --lessons-h1-font:"Poppins", sans-serif;
-    --lessons-h1-fontSize: 28px;
-    --lessons-h2-fontSize: 20px;
+    --lessons-h1-fontSize: 1.8rem;
+    --lessons-h2-fontSize: 1.3rem;
+    --lessons-h2-title-fontSize: 1rem;
     --lessons-h1-font-weight: 600;
 
+    /* paddding/layout */
+    --lessons-story-box-width:22.9rem;;
 }
 .lessons-h1 {
     font-family: var(--lessons-h1-font);
     font-size: var(--lessons-h1-fontSize);
     font-weight: var(--lessons-h1-font-weight);
     color: var(--lessons-h1-color);
+    text-align: center;
 }
 
 .headers-h2 {
@@ -30,20 +34,125 @@
     color: var(--lessons-h1-color);
 }
 
+
+
 body {
+    
+    width:100%;
     font-family: var(--lessons-h1-font);
     background-color: var(--lessons-backgroundcolor-body);
+     
 }
 
 .contianer {
     display: grid;
+    
+}
+
+.playlists{
+    height:100%;
+    width:100%;
+    list-style:none;
+    padding:0.5rem;
+    display:flex;
+}
+
+.playlist-item{
+    background-color: var(--lessons-h1-color);
+    height: 15rem;
+    width:11rem;
+    margin-right:1rem;
+    border-radius:0.5rem;
+}
+
+.more-items {
+    background-color: var(--lessons-backgroundcolor-addPlaylist);
+    height: 15rem;
+    width:11rem;
+    border-radius:0.5rem;
+    text-align:center;
+    
+}
+
+.more-items-white-plus {
+       
+    
+}
+
+/* stories */
+
+.first-language,.second-language {
+    border:none; 
+    border-radius:0.5rem;
+    padding:0.5rem;
+    margin-right: 0.2rem;
+    font-weight: 600;
+}
+.box-language{
+   
+}
+.a-showAll{
+    text-decoration: none;
+    margin-left: 5rem;
 }
 
 .ul-lessons-stories {
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:0.8rem;
+    padding:0.5rem;
+    margin-right:1rem;
+    overflow-x:scroll
    
+
+
 }
 
 .li-story {
     background-color: var(--lessons-story-box);
     list-style: none;
+    border-radius: 0.3rem;
+    width: 22.9rem;
+    min-width:15rem;
+    height: 5rem;
+    padding-bottom:2.8rem;
+       
+    
+  
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* grid story */
+.li-story .img-story {
+    grid-column: 1;
+    grid-row: 1 / 2;
+
+}
+
+.li-story .story-title {
+    grid-column: 2 / 3;
+    grid-row: 1;
+
+}
+
+.li-story .story-summary {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+.img-story {
+/* ws */
+}
+
+.story-title {
+    height:1rem;
+    font-size: var(--lessons-h2-title-fontSize);
+}
+
+.story-summary {
+   width: calc(22.9rem - 2rem);
+    height:4rem;
+    font-size:0.9rem;
 }
