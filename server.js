@@ -36,11 +36,54 @@ app.get('/', function(request, response) {
     // Render index.ejs uit de views map
   
 	fetchJson( storiesAPI).then((storiesData) => {
-		response.render('index', {stories: storiesData.data})
-        console.log(storiesData.data);
+		response.render('home')
+    
 	});
-	
 })
+
+app.get('/lessons', function(request, response) {
+    // Render index.ejs uit de views map
+  
+	fetchJson( storiesAPI).then((storiesData) => {
+		response.render('index', {stories: storiesData.data})
+    
+	});
+})
+
+
+app.get('/lessons/allstories', function(request, response) {
+    // Render index.ejs uit de views map
+  
+	fetchJson( storiesAPI).then((storiesData) => {
+		response.render('stories', {stories: storiesData.data})
+    
+	});
+})
+
+app.get('/lessons/playlist', function(request, response) {
+    // Render index.ejs uit de views map
+  
+	fetchJson( playlistsAPI).then((playlistData) => {
+		response.render('stories', {playlist: playlistData.data})
+    
+	});
+})
+
+app.get('/lessons/story', function(request, response) {
+    // Render index.ejs uit de views map
+  
+	fetchJson( storiesAPI).then((storiesData) => {
+		response.render('stories', {stories: storiesData.data})
+    
+	});
+})
+
+
+// app.get('/lessons', function(request,response) {
+
+// }
+
+
 //
 
 // Stel het poortnummer in waar express op moet gaan luisteren
