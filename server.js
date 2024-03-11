@@ -24,64 +24,58 @@ app.use(express.urlencoded({extended: true}))
 
 
 //endpoint
-const storiesAPI = 'https://fdnd-agency.directus.app/items/tm_story'
-const playlistsAPI = 'https://fdnd-agency.directus.app/items/tm_playlist'
-const audioAPI = 'https://fdnd-agency.directus.app/items/tm_audio'
+const storiesAPI = await fetchJson('https://fdnd-agency.directus.app/items/tm_story');
+const playlistsAPI = await fetchJson('https://fdnd-agency.directus.app/items/tm_playlist');
+const audioAPI = await fetchJson('https://fdnd-agency.directus.app/items/tm_audio');
+
+
 //routes 
 
 
 //GET
-//lessons
+//home
 app.get('/', function(request, response) {
     // Render index.ejs uit de views map
-  
 	fetchJson( storiesAPI).then((storiesData) => {
 		response.render('home')
     
 	});
 })
 
+
 app.get('/lessons', function(request, response) {
     // Render index.ejs uit de views map
-  
-	fetchJson( storiesAPI).then((storiesData) => {
-		response.render('index', {stories: storiesData.data})
-    
-	});
+response.render('index', {stories: storiesAPI.data, playlist: playlistsAPI.data});
+
 })
 
 
 app.get('/lessons/allstories', function(request, response) {
     // Render index.ejs uit de views map
   
+    response.render('stories', {stories: storiesAPI.data, playlist: playlistsAPI.data});
+})
+
+app.get('/lesson/playlist:id', function(request, response) {
+    // Render index.ejs uit de views map
+  
+	fetchJson(playlistsAPI).then((playlistData) => {
+		response.render('index', {
+            playlist: playlistData.data,
+
+        })
+    
+	});
+})
+
+app.get('/lessons/story:id', function(request, response) {
+    // Render index.ejs uit de views map
+  
 	fetchJson( storiesAPI).then((storiesData) => {
 		response.render('stories', {stories: storiesData.data})
     
 	});
 })
-
-app.get('/lessons/playlist', function(request, response) {
-    // Render index.ejs uit de views map
-  
-	fetchJson( playlistsAPI).then((playlistData) => {
-		response.render('stories', {playlist: playlistData.data})
-    
-	});
-})
-
-app.get('/lessons/story', function(request, response) {
-    // Render index.ejs uit de views map
-  
-	fetchJson( storiesAPI).then((storiesData) => {
-		response.render('stories', {stories: storiesData.data})
-    
-	});
-})
-
-
-// app.get('/lessons', function(request,response) {
-
-// }
 
 
 //
