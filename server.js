@@ -45,38 +45,42 @@ app.get('/', function(request, response) {
 
 app.get('/lessons', function(request, response) {
     // Render index.ejs uit de views map
-response.render('index', {stories: storiesAPI.data, playlist: playlistsAPI.data});
-
+response.render('index', {
+    stories: storiesAPI.data, 
+    playlist: playlistsAPI.data
+    });
 })
 
 
 app.get('/lessons/allstories', function(request, response) {
     // Render index.ejs uit de views map
   
-    response.render('stories', {stories: storiesAPI.data, playlist: playlistsAPI.data});
+    response.render('stories', {
+        stories: storiesAPI.data, 
+        playlist: playlistsAPI.data
+    });
 })
 
 //playist met id 
 
 app.get('/playlist/:id', function(request, response) {
     // Render index.ejs uit de views map
-  
-	fetchJson(playlistsAPI + request.params.id).then((playlistData) => {
-		response.render('playlist', {
-            playlist: playlistData.data,
 
-        })
-	});
-})
+		response.render('playlist', {
+            playlist: playlistsAPI.data
+
+        });
+	})
+
 
 app.get('lesson/story/:id', function(request, response) {
     // Render index.ejs uit de views map
-    
-	fetchJson( storiesAPI).then((storiesData) => {
-		response.render('stories', {stories: storiesData.data})
-    
-	});
-})
+    response.render('playlist', {
+        stories: storiesAPI.data
+
+    })
+});
+
 
 
 //

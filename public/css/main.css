@@ -55,6 +55,12 @@ body {
     display: flex;
 }
 
+
+.ul-playlist::-webkit-scrollbar {
+    width: 1px; /* Width of the scrollbar */
+    height:0.5rem;
+  }
+  
 .playlists{
     height: 100%;
     width: 11rem;
@@ -138,8 +144,20 @@ body {
     margin-right:1rem;
     overflow-x:scroll;
     overflow-y:hidden;
+   
     
 }
+
+.ul-lessons-stories::-webkit-scrollbar {
+    width: 1px; /* Width of the scrollbar */
+    height:0.5rem;
+  }
+  
+  .ul-lessons-stories::-webkit-scrollbar-thumb {
+    background-color: #6865658d; /* Color of the thumb */
+    border-radius: 1rem; /* Rounded corners */
+  }
+  
 
 .ul-stories {
 
