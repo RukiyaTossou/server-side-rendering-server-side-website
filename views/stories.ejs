@@ -5,27 +5,38 @@
     </a>
     
    
-    <h1>All stories </h1>
-    <input type="text" id="search-story" placeholder="Search for stories">
+    <h1 class="page-h1">All stories </h1>
+    <div class="searchbar">
+        <img class="search-icon" src="/image/icons/search.svg" alt="search icon">
+        <input type="text" id="search-story" placeholder=" Search for stories">
+    </div>
+    
 
     <section class="all-catogory">
-        <button>Animal</button>
-        <button>Season</button>
-        <button>Language</button>
-        <button>Sortong</button>
+        <button class="Filter white-text">Animal</button>
+        <button class="Filter white-text">Season</button>
+        <button class="Filter white-text">Language</button>
+        <button class="Filter white-text">Sorting</button>
     </section>
-    <section class="lessons-allstories"> 
+    <section class="ul-stories"> 
         <% stories.forEach(story => {%>
-            <article class="li-story">
-                    <img class="img-story" src="https://fdnd-agency.directus.app/assets/<%= story.image %>" alt="image">
+            <article class="li-story stories-li">
+                    <img class="img-story" src="https://fdnd-agency.directus.app/assets/<%= story.image %>" alt="story image">
                     <h2 class="story-title">
                          <%= story.title %> 
-                        </h2> 
+                    </h2> 
                     <p class="story-summary"> 
                         <%= story.summary %>
                     </p>
+                    <img class="image-flag" src="/image/icons/engelse-flag.svg" alt="flag">
+                    <div class="story-interactions">
+                        <img class="icon-playbutton" src="/image/icons/play-button.svg" alt="play button icon">
+                        <img class="icon-download" src="/image/icons/cloud-download-outline.svg" alt="download icon">
+                    </div>
             </article>
        <% });  %>
+    </section>
+ 
    
     </section>
 </article>

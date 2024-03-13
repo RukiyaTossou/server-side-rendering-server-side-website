@@ -2,38 +2,45 @@
 <body>
 <article class="container">
 <section>
-    <h1 class="lessons-h1">Lessons</h1>
+    <h1 class="page-h1">Lessons</h1>
     <h2 class="headers-h2">Own playlist</h2>
-    <% playlist.forEach(playlistItem => { %>
-        <article  class="playlists">
-            <div class="playlist-item">
-                <a href="/lesson/playlist">
-                    <img class="playlist-image" src="https://fdnd-agency.directus.app/assets/<%= playlistItem.image %>" alt="playlist image">
-                    <p class="playlist-img"><%= playlistItem.title %></p>
-                </a>
-                
-            </div>
-        </article>
-   <% }); %>    
 
-            <div class="more-items">
-                <img class="more-items-white-plus" src="/image/icons/white-plus.svg" alt="plus">
-                <h3>Make a playlist!</h3>
-                <p>Add your favorite stories in one playlist</p>
-            </div> 
-
+<div class="ul-playlist">
+    <article  class="playlists">
+        <% playlist.forEach(playlistItem => { %>
+         
+                <div class="playlist-item">
+                    <a class="playlist-info" href="/playlist/<%= playlistItem.id %>">
+                        <img class="playlist-image" src="https://fdnd-agency.directus.app/assets/<%= playlistItem.image %>" alt="playlist image">
+                        <h3 class="playlist-title"><%= playlistItem.title %></h3>  
+                        <!-- <div class="playlist-moreinfo">
+                            <img class="playlist-playbutton" src="/image/icons/play-button.svg" alt="play button icon">
+                            <p>32 min. 53 sec</p>
+                        </div>   -->
+                    </a>    
+                </div>
+       <% }); %>   
+       
+    </article> 
+      
+    <div class="more-items">
+        <img class="more-items-white-plus" src="/image/icons/white-plus.svg" alt="plus">
+        <h3 class="white-text">Make a playlist!</h3>
+        <p class="white-text">Add your favorite stories in one playlist</p>
+    </div>  
+</div>
+     
 </section>
 
-
+<!-- STORIES -->
 <section>
     <section>
         <h2 class="headers-h2">All stories</h2>
         <div class="box-language">
             <button class="first-language"> <img src="/image/icons/nederlandse-flag.png" alt="nederlandse flag"> Dutch</button>
-            <button class="second-language"><img src="/image/icons/engelse-flas.svg" alt="engelse flag"> English</button>
+            <button class="second-language"><img src="/image/icons/engelse-flag.svg" alt="engelse flag"> English</button>
             <a class="headers-h2 a-showAll" href="/lessons/allStories"> Show All</a>
         </div>
-        
     </section>
    
     <section class="ul-lessons-stories"> 
@@ -46,9 +53,18 @@
                     <p class="story-summary"> 
                         <%= story.summary %>
                     </p>
+                    <img class="image-flag" src="/image/icons/engelse-flag.svg" alt="flag">
+                    <div class="story-interactions">
+                        <img class="icon-playbutton" src="/image/icons/play-button.svg" alt="play button icon">
+                        <img class="icon-download" src="/image/icons/cloud-download-outline.svg" alt="download icon">
+                     </div>
             </article>
        <% });  %>
+
    
+    </section>
+    <section>
+        <h2 class="white-text">liked playlists</h2>
     </section>
 </article>
 

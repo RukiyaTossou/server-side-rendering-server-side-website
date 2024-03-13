@@ -56,21 +56,22 @@ app.get('/lessons/allstories', function(request, response) {
     response.render('stories', {stories: storiesAPI.data, playlist: playlistsAPI.data});
 })
 
-app.get('/lesson/playlist:id', function(request, response) {
+//playist met id 
+
+app.get('/playlist/:id', function(request, response) {
     // Render index.ejs uit de views map
   
-	fetchJson(playlistsAPI).then((playlistData) => {
-		response.render('index', {
+	fetchJson(playlistsAPI + request.params.id).then((playlistData) => {
+		response.render('playlist', {
             playlist: playlistData.data,
 
         })
-    
 	});
 })
 
-app.get('/lessons/story:id', function(request, response) {
+app.get('lesson/story/:id', function(request, response) {
     // Render index.ejs uit de views map
-  
+    
 	fetchJson( storiesAPI).then((storiesData) => {
 		response.render('stories', {stories: storiesData.data})
     
