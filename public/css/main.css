@@ -259,8 +259,8 @@ body {
 
 .search-icon {
     position: absolute;
-    top:9.1rem;
-    left:1.3rem;
+    top:8.6rem;
+    left:1rem;
 }
 
 #search-story {
@@ -303,8 +303,11 @@ body {
     position:fixed;
     top:0;
     left:0;
+}
 
-
+.menu-close {
+    padding:0.5rem;
+    border-radius: 0.4rem;
 }
 
 /* ID'S */
