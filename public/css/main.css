@@ -42,6 +42,7 @@ body {
     padding:0.5rem;
     font-family: var(--lessons-h1-font);
     background-color: var(--lessons-backgroundcolor-body);   
+    margin: 0;
 }
 
 .contianer {
