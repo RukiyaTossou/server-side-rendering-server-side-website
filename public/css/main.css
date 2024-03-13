@@ -56,7 +56,7 @@ body {
 
 .playlists{
     height: 100%;
-   width: 11rem;
+    width: 11rem;
     display: flex;
     padding-bottom:0.5rem;
     overflow-x: scroll;
@@ -132,10 +132,10 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:0.8rem;
-    width:25.1rem;
+    width:24rem;
     padding-top:0.8rem;
     margin-right:1rem;
-     overflow-x:scroll;
+    overflow-x:scroll;
     overflow-y:hidden;
     
 }
@@ -212,12 +212,12 @@ body {
 }
 
 .story-summary {
-position:relative;
+    position:relative;
     bottom:1.7rem;
-   width: 20rem;
+    width: 20rem;
     max-width:16rem;
-   height:4rem;
-   font-size:0.9rem;
+    height:4rem;
+    font-size:0.9rem;
 }
 
 .image-flag {
@@ -226,12 +226,12 @@ position:relative;
     left: 14.4rem;
 }
 
- .story-interactions {
+.story-interactions {
     position:relative;
     top:3rem;
-     margin:0.3rem 0.8rem 0.4rem 0.3rem;
+    margin:0.3rem 0.8rem 0.4rem 0.3rem;
 
- }
+}
 
 .icon-download {
     align-self: end;
