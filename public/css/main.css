@@ -274,8 +274,6 @@ body {
 /* menu */
 .menu-content {
     display: none;
-    width:23rem;
-    height:100%;
     /* position:absolute; */
     /* top:4rem; */
     z-index: 2;
@@ -290,14 +288,14 @@ body {
     padding:0.7rem;
     position:fixed;
     right:2rem;
-    top:2.5rem;
+    top:24rem;
     border-radius:1rem;
     border:none;
     background-color:#1c1c1cb3;
 }
 
 .menu-content {
-    background-color:#1c1c1cb3 ;
+    background-color:#1c1c1cf0 ;
     height:100%;
     width:100% ;
     position:fixed;
@@ -305,9 +303,11 @@ body {
     left:0;
 }
 
+
 .menu-close {
+    border:none;
     padding:0.5rem;
-    border-radius: 0.4rem;
+    border-radius: 0.7rem;
 }
 
 /* ID'S */
