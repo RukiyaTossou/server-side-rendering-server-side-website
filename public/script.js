@@ -23,7 +23,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     const hamburgerButton = document.querySelector('.menu-button');
-    const menu = document.querySelector('.menu-content');
+    const menu = document.querySelector('.menu-container');
     const closeIcon = document.querySelector('.menu-close');
 
     hamburgerButton.addEventListener("click", toggleMenu);
@@ -37,10 +37,10 @@ document.addEventListener("DOMContentLoaded", function() {
         // Check if 'showMenu' class is present
         if (menu.classList.contains("showMenu")) {
             // If 'showMenu' class is present, set close icon visibility to 'block'
-            closeIcon.style.display = "block";
+            menu.style.display = "block";
         } else {
             // If 'showMenu' class is not present, set close icon visibility to 'none'
-            closeIcon.style.display = "none";
+            menu.style.display = "none";
         }
     }
     
