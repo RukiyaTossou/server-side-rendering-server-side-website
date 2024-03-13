@@ -266,15 +266,30 @@ body {
     padding:0.5rem 0.5rem 0.5rem 1.5rem;
     border-radius:0.5rem;
     border:none;
-    width:20rem;
+    width:20rem;    
     
 }
 
 /* menu */
+.menu-content {
+    display: none;
+    width:23rem;
+    height:100%;
+    /* position:absolute; */
+    /* top:4rem; */
+    z-index: 2;
+}
+
+.showMenu {
+    display: block;
+    transition: 2ms;
+}
+
 .menu-button {
     padding:0.7rem;
-    position:absolute;
-    right:1rem;
+    position:fixed;
+    right:2rem;
+    top:2.5rem;
     border-radius:1rem;
     border:none;
     background-color:#1c1c1cb3;
@@ -282,8 +297,13 @@ body {
 
 .menu-content {
     background-color:#1c1c1cb3 ;
-    height:18rem;
-    width:10rem ;
+    height:100%;
+    width:100% ;
+    position:fixed;
+    top:0;
+    left:0;
+
+
 }
 
 /* ID'S */
