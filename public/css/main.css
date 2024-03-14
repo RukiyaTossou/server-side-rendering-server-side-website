@@ -38,8 +38,8 @@
 }
 
 body {
-    width:100%;
-    padding:0.5rem;
+    width: 100%;
+    padding: 0.5rem;
     font-family: var(--lessons-h1-font);
     background-color: var(--lessons-backgroundcolor-body);   
     margin: 0;
@@ -55,13 +55,12 @@ body {
     display: flex;
 }
 
-
 .playlists::-webkit-scrollbar {
     width: 1px; /* Width of the scrollbar */
-    height:0.5rem;
+    height: 0.5rem;
   }
 
- .playlists::-webkit-scrollbar-thumb {
+.playlists::-webkit-scrollbar-thumb {
     background-color: #6865658d; /* Color of the thumb */
     border-radius: 1rem; /* Rounded corners */
   } 
@@ -70,11 +69,10 @@ body {
     height: 100%;
     width: 11rem;
     display: flex;
-    padding-bottom:0.5rem;
+    padding-bottom: 0.5rem;
     overflow-x: scroll;
 
 }
-
 
 .playlist-image {
     width: 9rem;
@@ -94,22 +92,18 @@ body {
     height: 15rem;
     width: 11rem;
     border-radius: 0.5rem;
-    text-align:center;   
+    text-align: center;   
     list-style: none;
     min-width: 10rem;
     margin-left: 0.5rem;
-  
 }
 
 .more-items-white-plus {
     margin-top: 1rem;
 }
 
-
 .playlist-playbutton {
-    background-color: #F3A22A;
-
-    
+    background-color: #F3A22A;  
 }
 
 .playlist-item {
@@ -119,18 +113,15 @@ body {
     margin-right: 1rem;
     border-radius: 0.5rem;
     list-style: none;
-    text-align:center;
-   
+    text-align: center;
 }
-
-
 
 /* STORIES */
 
 .first-language,.second-language {
-    border:none; 
-    border-radius:0.5rem;
-    padding:0.5rem;
+    border: none; 
+    border-radius: 0.5rem;
+    padding: 0.5rem;
     margin-right: 0.2rem;
     font-weight: 600;
 }
@@ -143,19 +134,17 @@ body {
 .ul-lessons-stories {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap:0.8rem;
-    width:24rem;
-    padding-top:0.8rem;
-    margin-right:1rem;
-    overflow-x:scroll;
-    overflow-y:hidden;
-   
-    
+    gap: 0.8rem;
+    width: 24rem;
+    padding-top: 0.8rem;
+    margin-right: 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .ul-lessons-stories::-webkit-scrollbar {
     width: 1px; /* Width of the scrollbar */
-    height:0.5rem;
+    height: 0.5rem;
   }
   
   .ul-lessons-stories::-webkit-scrollbar-thumb {
@@ -163,14 +152,12 @@ body {
     border-radius: 1rem; /* Rounded corners */
   }
   
-
 .ul-stories {
-
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap:0.8rem;
-    padding-top:0.8rem;
-    margin-right:1rem;
+    gap: 0.8rem;
+    padding-top: 0.8rem;
+    margin-right: 1rem;
 }
 
 .li-story {
@@ -178,10 +165,10 @@ body {
     list-style: none;
     border-radius: 0.3rem;
     width: 23.3rem;
-    min-width:15rem;
+    min-width: 15rem;
     height: 5rem;
-    padding-bottom:2.8rem;
-    
+    padding-bottom: 2.8rem;
+
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
@@ -191,13 +178,11 @@ body {
 .li-story .img-story {
     grid-column: 1;
     grid-row: 1 / 3;
-
 }
 
 .li-story .story-title {
     grid-column: 2 / 3;
     grid-row: 1;
-
 }
 
 .li-story .story-summary {
@@ -210,11 +195,9 @@ body {
     grid-row: 1;
 }
 
-
 .li-story .story-interactions {
     grid-column: 2 / 3;
     grid-row: 2;
-  
 }
 
 /* LESSON_STORIES */
@@ -226,35 +209,33 @@ body {
     height: 5rem;
     width: 5rem;
     object-fit: cover;
-    padding:0.8rem;
+    padding: 0.8rem;
 }
 
 .story-title {
-    height:1rem;
+    height: 1rem;
     font-size: var(--lessons-h2-title-fontSize);
-      
 }
 
 .story-summary {
-    position:relative;
-    bottom:1.7rem;
+    position: relative;
+    bottom: 1.7rem;
     width: 20rem;
-    max-width:16rem;
-    height:4rem;
-    font-size:0.9rem;
+    max-width: 16rem;
+    height: 4rem;
+    font-size: 0.9rem;
 }
 
 .image-flag {
     position: relative;
-    top:0.5rem;
+    top: 0.5rem;
     left: 14.4rem;
 }
 
 .story-interactions {
-    position:relative;
-    top:3rem;
-    margin:0.3rem 0.8rem 0.4rem 0.3rem;
-
+    position: relative;
+    top: 3rem;
+    margin: 0.3rem 0.8rem 0.4rem 0.3rem;
 }
 
 .icon-download {
@@ -271,9 +252,9 @@ body {
 /* ALLS STORIES  */
 .Filter {
     background-color: #9264F4;
-    border:none;
+    border: none;
     border-radius: 0.2rem;
-    padding:0.5rem;
+    padding: 0.5rem;
 }
 
 .searchbar {
@@ -282,23 +263,20 @@ body {
 
 .search-icon {
     position: absolute;
-    top:8.6rem;
-    left:1rem;
+    top: 8.6rem;
+    left: 1rem;
 }
 
 #search-story {
-    padding:0.5rem 0.5rem 0.5rem 1.5rem;
-    border-radius:0.5rem;
-    border:none;
-    width:20rem;    
-    
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    border:  none;
+    width:20rem;     
 }
 
 /* menu */
 .menu-content {
     display: none;
-    /* position:absolute; */
-    /* top:4rem; */
     z-index: 2;
 }
 
@@ -308,13 +286,13 @@ body {
 }
 
 .menu-button {
-    padding:0.7rem;
-    position:fixed;
-    right:2rem;
-    top:24rem;
-    border-radius:1rem;
-    border:none;
-    background-color:#1c1c1cb3;
+    padding: 0.7rem;
+    position: fixed;
+    right: 2rem;
+    top: 24rem;
+    border-radius: 1rem;
+    border:  none;
+    background-color: #1c1c1cb3;
 }
 
 .menu-container {
@@ -333,50 +311,49 @@ body {
 .menu-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:1rem;
+    grid-gap: 1rem;
     align-items: center;
-    align-self:center;
+    align-self: center;
     padding: 2rem;
-    width:10rem;
-    scale:1.3;
-    position:absolute;
-     top: 50%;
+    width: 10rem;
+    scale: 1.3;
+    position: absolute;
+    top: 50%;
     left: 50%;
-  
-    transform: translate(-50%, -50%); /* Center the menu content */
-
+    transform: translate(-50%, -50%); /* Center de  menu content */
 }
+
 .menu-close {
-    position:absolute;
-    top:18rem;
-    left:13rem;
-    border:none;
-    padding:0.5rem;
+    position: absolute;
+    top: 18rem;
+    left: 13rem;
+    border: none;
+    padding: 0.5rem;
     border-radius: 0.7rem;
 }
+
 .menu-links {
     text-decoration: none;
     color: var(--lessons-h1-color)  ;
 }
 
 /* ID'S */
-
 #home-icon {
-    background-color:#3F92B6;
-    padding:0.6rem;
-    border-radius:1rem;
+    background-color: #3F92B6;
+    padding: 0.6rem;
+    border-radius: 1rem;
 }
 
 #profile-icon {
-    background-color:#FD8C73;
-    padding:0.6rem;
-    border-radius:1rem;
+    background-color: #FD8C73;
+    padding: 0.6rem;
+    border-radius: 1rem;
 }
 
 #stats-icon {
-    background-color:#06A192;
-    padding:0.6rem;
-    border-radius:1rem;
+    background-color: #06A192;
+    padding: 0.6rem;
+    border-radius: 1rem;
 }
 
 #puzzle-icon {
@@ -386,8 +363,8 @@ body {
 }
 
 #book-icon {
-    background-color:#954BE2;
-    padding:0.6rem;
-    border-radius:1rem;
+    background-color: #954BE2;
+    padding: 0.6rem;
+    border-radius: 1rem;
 }
 
