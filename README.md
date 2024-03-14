@@ -14,7 +14,9 @@ Tumi mundo
   * [Licentie](#licentie)
 
 ## Beschrijving
- 
+ De opdrachtgever is Tumi Mundo. TuMi Mundo heeft een app die ouders helpt met het tweetalig opvoeden van hun kind op basis van wetenschappelijk onderzoek.. Tumi mundi is gericht op ouders met kinderen van 0-4 jaar, waarmee de kinderen makkelijk de taal kunnen op pakken. De web app bestaat uit verhalen die je kan beluisteren in verschillende talen. De data die ouders hier in zetten kan ook gebruikt worden voor dit onderzoek (met toestemming), waardoor de methode continu onderzocht en geüpdatet kan worden. 
+
+De pagina lessons is een pagina waar de eerste stap wordt gelegd. Hier bevinden de verhalen en playlisten die bij het profiel van de gebruiker past. 
 <!-- In de Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
