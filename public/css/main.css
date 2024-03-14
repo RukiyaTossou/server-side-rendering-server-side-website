@@ -56,10 +56,15 @@ body {
 }
 
 
-.ul-playlist::-webkit-scrollbar {
+.playlists::-webkit-scrollbar {
     width: 1px; /* Width of the scrollbar */
     height:0.5rem;
   }
+
+ .playlists::-webkit-scrollbar-thumb {
+    background-color: #6865658d; /* Color of the thumb */
+    border-radius: 1rem; /* Rounded corners */
+  } 
   
 .playlists{
     height: 100%;

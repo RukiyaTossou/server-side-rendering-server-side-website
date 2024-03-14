@@ -54,10 +54,8 @@ response.render('index', {
 
 app.get('/lessons/allstories', function(request, response) {
     // Render index.ejs uit de views map
-  
     response.render('stories', {
-        stories: storiesAPI.data, 
-        playlist: playlistsAPI.data
+        stories: storiesAPI.data
     });
 })
 
@@ -65,11 +63,10 @@ app.get('/lessons/allstories', function(request, response) {
 
 app.get('/playlist/:id', function(request, response) {
     // Render index.ejs uit de views map
-
 		response.render('playlist', {
             playlist: playlistsAPI.data
-
         });
+        console.log(`test`)
 	})
 
 
