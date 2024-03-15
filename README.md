@@ -20,9 +20,9 @@ De pagina lessons is een pagina waar de eerste stap wordt gelegd. Hier bevinden 
 <!-- In de Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
-
-## Gebruik
 ![image](https://github.com/RukiyaTossou/server-side-rendering-server-side-website/assets/114156045/a81a62aa-141e-413b-8d7c-63d91cb87c8b)
+## Gebruik
+ 
 
 
 <!--Bij Gebruik staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
